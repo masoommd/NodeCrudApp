@@ -18,7 +18,7 @@ let upload = multer({
     storage: storage,
 }).single("image");
 
-//Insert user tom the database
+//Insert user to the database
 router.post("/add", upload, async (req, res) => {
     try {
         const user = new User({

@@ -20,7 +20,7 @@ const PORT = 8080;
 // async function main(){
 //     await mongoose.connect(MONGO_URL);
 // }
-
+//Connection of mongodb
 mongoose.connect(process.env.db_Url);
 const db = mongoose.connection;
 db.on('error',(err)=> console.log(err));
